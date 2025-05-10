@@ -15,29 +15,36 @@
 <body>
 
     <!-- Barra de navegación de la página -->
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <i class="fa-brands fa-instagram"></i>
                 <span>Instagram</span>
             </a>
-            <div>
-                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                    type="button">Nueva Publicación</button>
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    <i class="fa-solid fa-gear"></i>
-                </button>
-
-                <!-- Menú dropdown -->
-                <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item" href="#">Perfil</a></li>
-                    <li><a class="dropdown-item" href="#">Ajustes</a></li>
-                    <li><a class="dropdown-item" href="#">Privacidad</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span
+                    class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                <ul class="navbar-nav justify-content-end">
+                    <li class="nav-item align-self-end"><button class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" type="button">Nueva Publicación</button>
                     </li>
-                    <li><a class="dropdown-item text-danger" href="#">Salir</a></li>
+                    <li class="nav-item dropdown align-self-end text-end"><button class="btn btn-secondary dropdown-toggle"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+
+                        <!-- Menú dropdown -->
+                        <ul class="dropdown-menu dropdown-menu-end text-center">
+                            <li><a class="dropdown-item" href="#">Perfil</a></li>
+                            <li><a class="dropdown-item" href="#">Ajustes</a></li>
+                            <li><a class="dropdown-item" href="#">Privacidad</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Salir</a></li>
+                        </ul>
+                    </li>
                 </ul>
 
                 <!-- Formulario modal -->
